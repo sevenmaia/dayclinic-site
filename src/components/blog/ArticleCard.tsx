@@ -21,7 +21,7 @@ interface ArticleCardProps {
 
 export const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
   return (
-    <article className="flex flex-col bg-white rounded-xl overflow-hidden border border-borderGray hover:shadow-card hover:border-brand-orange/40 transition-all duration-300 group">
+    <article className="flex flex-col bg-white rounded-lg sm:rounded-xl overflow-hidden border border-borderGray hover:shadow-card hover:border-brand-orange/40 transition-all duration-300 group">
       {/* Imagem do Artigo */}
       <div className="relative overflow-hidden bg-ink-950">
         <ImagePlaceholder

@@ -67,10 +67,10 @@ export default function ContatoPage() {
               </div>
 
               {/* Botão de Destaque WhatsApp */}
-              <div className="p-6 rounded-2xl bg-white border border-borderGray shadow-sm space-y-4">
+              <div className="p-5 sm:p-6 rounded-lg sm:rounded-xl bg-white border border-borderGray shadow-sm space-y-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-xl bg-brand-orange/15 text-brand-orange flex items-center justify-center">
-                    <FaWhatsapp className="w-6 h-6" />
+                  <div className="w-11 h-11 rounded-md sm:rounded-lg bg-brand-orange/15 text-brand-orange flex items-center justify-center">
+                    <FaWhatsapp className="w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
                   <div>
                     <h3 className="text-base font-bold text-ink-950">
@@ -94,7 +94,7 @@ export default function ContatoPage() {
               </div>
 
               {/* Informações detalhadas da clínica */}
-              <div className="p-6 rounded-2xl bg-white border border-borderGray shadow-sm space-y-5 text-sm">
+              <div className="p-5 sm:p-6 rounded-lg sm:rounded-xl bg-white border border-borderGray shadow-sm space-y-5 text-sm">
                 <div className="flex items-start gap-3.5">
                   <MapPin className="w-5 h-5 text-brand-orange shrink-0 mt-0.5" />
                   <div>
@@ -145,7 +145,7 @@ export default function ContatoPage() {
 
             {/* Coluna 2: Formulário de Triagem / Agendamento */}
             <div className="lg:col-span-7">
-              <div className="bg-white p-8 sm:p-10 rounded-2xl border border-borderGray shadow-card">
+              <div className="bg-white p-6 sm:p-9 rounded-lg sm:rounded-xl border border-borderGray shadow-card">
                 <div className="mb-6">
                   <span className="text-xs font-bold uppercase tracking-wider text-brand-orange">
                     TRIAGEM DE ATENDIMENTO

@@ -21,7 +21,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
   return (
     <Link
       href={service.href}
-      className="group relative flex flex-col rounded-xl overflow-hidden bg-white border border-borderGray hover:border-brand-orange/50 hover:shadow-card transition-all duration-300"
+      className="group relative flex flex-col rounded-lg sm:rounded-xl overflow-hidden bg-white border border-borderGray hover:border-brand-orange/50 hover:shadow-card transition-all duration-300"
     >
       {/* Imagem / Foto do Serviço */}
       <div className="relative overflow-hidden bg-ink-950">

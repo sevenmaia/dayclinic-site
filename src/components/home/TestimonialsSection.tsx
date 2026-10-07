@@ -63,7 +63,7 @@ export const TestimonialsSection: React.FC = () => {
             const delayTime = idx === 1 ? 0 : idx === 0 ? 0.08 : 0.14;
             return (
               <MotionFade key={item.id} variant="fadeUp" delay={delayTime}>
-                <div className="bg-white p-7 rounded-2xl border border-borderGray flex flex-col justify-between shadow-sm hover:shadow-card transition-all duration-300 h-full">
+                <div className="bg-white p-6 sm:p-7 rounded-lg sm:rounded-xl border border-borderGray flex flex-col justify-between shadow-sm hover:shadow-card transition-all duration-300 h-full">
                   <div>
                     {/* Estrelas */}
                     <div className="flex items-center gap-1 text-brand-orange mb-4">

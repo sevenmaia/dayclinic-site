@@ -122,7 +122,7 @@ export function ArticleEditorView({ onBack, initialArticleId }: ArticleEditorVie
         <div className="flex items-center gap-3">
           <button
             onClick={onBack}
-            className="p-2 rounded-xl border border-[#E7E7E7] bg-white text-[#737373] hover:text-[#111111] hover:border-[#111111]/30 transition shadow-xs"
+            className="p-2 rounded-md sm:rounded-lg border border-[#E7E7E7] bg-white text-[#737373] hover:text-[#111111] hover:border-[#111111]/30 transition shadow-xs"
             title="Voltar aos Artigos"
           >
             <ArrowLeft className="w-4 h-4" />
@@ -140,14 +140,14 @@ export function ArticleEditorView({ onBack, initialArticleId }: ArticleEditorVie
 
         <div className="flex items-center gap-3">
           {savedToast && (
-            <span className="flex items-center gap-1.5 text-xs text-[#26944B] bg-[#26944B]/10 px-3 py-1.5 rounded-lg border border-[#26944B]/20 font-medium">
+            <span className="flex items-center gap-1.5 text-xs text-[#26944B] bg-[#26944B]/10 px-3 py-1.5 rounded-md sm:rounded-lg border border-[#26944B]/20 font-medium">
               <Check className="w-3.5 h-3.5" /> Salvo com sucesso!
             </span>
           )}
 
           <button
             onClick={handleSave}
-            className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-[#E7E7E7] bg-white text-sm font-semibold text-[#111111] hover:bg-[#F6F6F4] transition shadow-xs"
+            className="flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-md sm:rounded-lg border border-[#E7E7E7] bg-white text-xs sm:text-sm font-semibold text-[#111111] hover:bg-[#F6F6F4] transition shadow-xs"
           >
             <Eye className="w-4 h-4 text-[#737373]" />
             Prévia
@@ -155,7 +155,7 @@ export function ArticleEditorView({ onBack, initialArticleId }: ArticleEditorVie
 
           <button
             onClick={handleSave}
-            className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#D98900] hover:bg-[#C77900] text-white text-sm font-semibold transition shadow-md shadow-[#D98900]/20"
+            className="flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-md sm:rounded-lg bg-[#D98900] hover:bg-[#C77900] text-white text-xs sm:text-sm font-semibold transition shadow-md shadow-[#D98900]/20"
           >
             <Save className="w-4 h-4" />
             Salvar Alterações
@@ -239,7 +239,7 @@ export function ArticleEditorView({ onBack, initialArticleId }: ArticleEditorVie
           {/* Main article content column (8 cols) */}
           <div className="lg:col-span-8 space-y-6">
             {/* Title & Slug */}
-            <div className="bg-white rounded-2xl p-6 border border-[#E7E7E7] shadow-xs space-y-4">
+            <div className="bg-white rounded-lg sm:rounded-xl p-5 sm:p-6 border border-[#E7E7E7] shadow-xs space-y-4">
               <div>
                 <label className="block text-xs font-bold text-[#737373] uppercase tracking-wider mb-1.5">
                   Título do Artigo
@@ -249,7 +249,7 @@ export function ArticleEditorView({ onBack, initialArticleId }: ArticleEditorVie
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
                   placeholder="Digite o título principal..."
-                  className="w-full text-xl font-bold text-[#111111] px-4 py-3 rounded-xl border border-[#E7E7E7] focus:border-[#D98900] focus:ring-1 focus:ring-[#D98900] outline-hidden placeholder:text-[#A0A0A0]"
+                  className="w-full text-lg sm:text-xl font-bold text-[#111111] px-3.5 sm:px-4 py-2.5 sm:py-3 rounded-md sm:rounded-lg border border-[#E7E7E7] focus:border-[#D98900] focus:ring-1 focus:ring-[#D98900] outline-hidden placeholder:text-[#A0A0A0]"
                 />
               </div>
 
@@ -257,7 +257,7 @@ export function ArticleEditorView({ onBack, initialArticleId }: ArticleEditorVie
                 <label className="block text-xs font-bold text-[#737373] uppercase tracking-wider mb-1.5">
                   URL Amigável (Slug)
                 </label>
-                <div className="flex items-center rounded-xl border border-[#E7E7E7] bg-[#F6F6F4] px-3.5 py-2.5 text-sm">
+                <div className="flex items-center rounded-md sm:rounded-lg border border-[#E7E7E7] bg-[#F6F6F4] px-3 sm:px-3.5 py-2 sm:py-2.5 text-xs sm:text-sm">
                   <span className="text-[#737373] font-medium mr-1">/papo-de-especialista/</span>
                   <input
                     type="text"
@@ -270,7 +270,7 @@ export function ArticleEditorView({ onBack, initialArticleId }: ArticleEditorVie
             </div>
 
             {/* Visual Editor Card */}
-            <div className="bg-white rounded-2xl border border-[#E7E7E7] shadow-xs overflow-hidden">
+            <div className="bg-white rounded-lg sm:rounded-xl border border-[#E7E7E7] shadow-xs overflow-hidden">
               {/* Toolbar */}
               <div className="bg-[#F8F8F7] border-b border-[#E7E7E7] px-4 py-2.5 flex flex-wrap items-center gap-1 text-[#3C3C3C]">
                 <button
@@ -393,7 +393,7 @@ export function ArticleEditorView({ onBack, initialArticleId }: ArticleEditorVie
           {/* Editor Sidebar (4 cols) */}
           <div className="lg:col-span-4 space-y-6">
             {/* Status & Publication Box */}
-            <div className="bg-white rounded-2xl p-5 border border-[#E7E7E7] shadow-xs space-y-4">
+            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-5 border border-[#E7E7E7] shadow-xs space-y-4">
               <h3 className="text-sm font-bold text-[#111111]">Status & Configuração</h3>
 
               <div>
@@ -401,7 +401,7 @@ export function ArticleEditorView({ onBack, initialArticleId }: ArticleEditorVie
                 <select
                   value={status}
                   onChange={(e) => setStatus(e.target.value as any)}
-                  className="w-full text-sm font-semibold text-[#111111] px-3.5 py-2.5 rounded-xl border border-[#E7E7E7] focus:border-[#D98900] outline-hidden bg-white"
+                  className="w-full text-xs sm:text-sm font-semibold text-[#111111] px-3 py-2 sm:px-3.5 sm:py-2.5 rounded-md sm:rounded-lg border border-[#E7E7E7] focus:border-[#D98900] outline-hidden bg-white"
                 >
                   <option value="Publicado">Publicado</option>
                   <option value="Rascunho">Rascunho</option>
@@ -417,7 +417,7 @@ export function ArticleEditorView({ onBack, initialArticleId }: ArticleEditorVie
                 <select
                   value={category}
                   onChange={(e) => setCategory(e.target.value as any)}
-                  className="w-full text-sm font-semibold text-[#111111] px-3.5 py-2.5 rounded-xl border border-[#E7E7E7] focus:border-[#D98900] outline-hidden bg-white"
+                  className="w-full text-xs sm:text-sm font-semibold text-[#111111] px-3 py-2 sm:px-3.5 sm:py-2.5 rounded-md sm:rounded-lg border border-[#E7E7E7] focus:border-[#D98900] outline-hidden bg-white"
                 >
                   <option value="Dermatologia">Dermatologia</option>
                   <option value="Transplante Capilar">Transplante Capilar</option>
@@ -432,7 +432,7 @@ export function ArticleEditorView({ onBack, initialArticleId }: ArticleEditorVie
                 <select
                   value={author}
                   onChange={(e) => setAuthor(e.target.value)}
-                  className="w-full text-sm font-semibold text-[#111111] px-3.5 py-2.5 rounded-xl border border-[#E7E7E7] focus:border-[#D98900] outline-hidden bg-white"
+                  className="w-full text-xs sm:text-sm font-semibold text-[#111111] px-3 py-2 sm:px-3.5 sm:py-2.5 rounded-md sm:rounded-lg border border-[#E7E7E7] focus:border-[#D98900] outline-hidden bg-white"
                 >
                   <option value="Dra. Janaina Tirapelle">Dra. Janaina Tirapelle (CRM-AM 7349)</option>
                   <option value="Dr. João Vieira">Dr. João Vieira (CRM-AM 8521)</option>
@@ -443,13 +443,13 @@ export function ArticleEditorView({ onBack, initialArticleId }: ArticleEditorVie
             </div>
 
             {/* Featured Image */}
-            <div className="bg-white rounded-2xl p-5 border border-[#E7E7E7] shadow-xs space-y-3">
+            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-5 border border-[#E7E7E7] shadow-xs space-y-3">
               <div className="flex items-center justify-between">
                 <h3 className="text-sm font-bold text-[#111111]">Imagem Destacada</h3>
                 <span className="text-[11px] text-[#737373]">16:9 ideal</span>
               </div>
 
-              <div className="relative aspect-video rounded-xl overflow-hidden border border-[#E7E7E7] bg-[#F6F6F4] group">
+              <div className="relative aspect-video rounded-md sm:rounded-lg overflow-hidden border border-[#E7E7E7] bg-[#F6F6F4] group">
                 <Image
                   src={image}
                   alt="Imagem destacada do artigo"
@@ -459,7 +459,7 @@ export function ArticleEditorView({ onBack, initialArticleId }: ArticleEditorVie
                 <div className="absolute inset-0 bg-[#111111]/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-2">
                   <button
                     type="button"
-                    className="px-3 py-1.5 rounded-lg bg-white text-xs font-bold text-[#111111] hover:bg-[#F6F6F4] transition"
+                    className="px-3 py-1.5 rounded-md sm:rounded-lg bg-white text-xs font-bold text-[#111111] hover:bg-[#F6F6F4] transition"
                   >
                     Trocar imagem
                   </button>
@@ -479,7 +479,7 @@ export function ArticleEditorView({ onBack, initialArticleId }: ArticleEditorVie
             </div>
 
             {/* Excerpt / Resumo */}
-            <div className="bg-white rounded-2xl p-5 border border-[#E7E7E7] shadow-xs space-y-2">
+            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-5 border border-[#E7E7E7] shadow-xs space-y-2">
               <div className="flex items-center justify-between">
                 <h3 className="text-sm font-bold text-[#111111]">Resumo / Lead</h3>
                 <span className="text-[11px] text-[#737373]">{excerpt.length}/160 caracteres</span>
@@ -491,7 +491,7 @@ export function ArticleEditorView({ onBack, initialArticleId }: ArticleEditorVie
                 rows={3}
                 value={excerpt}
                 onChange={(e) => setExcerpt(e.target.value)}
-                className="w-full text-xs text-[#111111] p-3 rounded-xl border border-[#E7E7E7] focus:border-[#D98900] outline-hidden leading-relaxed"
+                className="w-full text-xs text-[#111111] p-2.5 sm:p-3 rounded-md sm:rounded-lg border border-[#E7E7E7] focus:border-[#D98900] outline-hidden leading-relaxed"
               />
             </div>
           </div>

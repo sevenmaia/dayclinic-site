@@ -36,7 +36,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({ onEditArticle, onN
   return (
     <div className="space-y-8 pb-12">
       {/* 1. TOPO / BANNER DE BOAS-VINDAS COM FOTO DOS MÉDICOS FUNDADORES */}
-      <div className="relative rounded-2xl overflow-hidden bg-gradient-to-r from-[#FFF4E3] via-[#FFF9F0] to-[#FFFFFF] border border-[#E7E7E7] shadow-xs p-8 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-8">
+      <div className="relative rounded-lg sm:rounded-xl overflow-hidden bg-gradient-to-r from-[#FFF4E3] via-[#FFF9F0] to-[#FFFFFF] border border-[#E7E7E7] shadow-xs p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8">
         <div className="max-w-xl space-y-3 z-10">
           <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#D98900]">
             BEM-VINDO(A)
@@ -51,7 +51,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({ onEditArticle, onN
         </div>
 
         {/* Imagem dos Médicos extraída com alta fidelidade */}
-        <div className="relative w-72 h-44 shrink-0 rounded-xl overflow-hidden shadow-sm border border-[#E7E7E7] bg-white">
+        <div className="relative w-72 h-44 shrink-0 rounded-md sm:rounded-lg overflow-hidden shadow-sm border border-[#E7E7E7] bg-white">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/admin/admin-welcome-doctors.png"
@@ -62,11 +62,11 @@ export const DashboardView: React.FC<DashboardViewProps> = ({ onEditArticle, onN
       </div>
 
       {/* 2. OS 4 CARDS DE STATUS DINÂMICOS */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
         {/* Card 1: Publicados */}
-        <div className="bg-white p-5 rounded-2xl border border-[#E7E7E7] shadow-xs flex items-center gap-4 hover:border-[#D98900] transition-colors">
-          <div className="w-12 h-12 rounded-xl bg-[#EAF7EE] text-[#26944B] flex items-center justify-center shrink-0">
-            <FileText className="w-6 h-6" />
+        <div className="bg-white p-4 sm:p-5 rounded-lg sm:rounded-xl border border-[#E7E7E7] shadow-xs flex items-center gap-3.5 sm:gap-4 hover:border-[#D98900] transition-colors">
+          <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-md sm:rounded-lg bg-[#EAF7EE] text-[#26944B] flex items-center justify-center shrink-0">
+            <FileText className="w-5 h-5 sm:w-6 sm:h-6" />
           </div>
           <div>
             <span className="text-2xl font-extrabold text-[#111111] leading-none block">
@@ -79,9 +79,9 @@ export const DashboardView: React.FC<DashboardViewProps> = ({ onEditArticle, onN
         </div>
 
         {/* Card 2: Rascunhos */}
-        <div className="bg-white p-5 rounded-2xl border border-[#E7E7E7] shadow-xs flex items-center gap-4 hover:border-[#D98900] transition-colors">
-          <div className="w-12 h-12 rounded-xl bg-[#FFF4E3] text-[#D98900] flex items-center justify-center shrink-0">
-            <FileEdit className="w-6 h-6" />
+        <div className="bg-white p-4 sm:p-5 rounded-lg sm:rounded-xl border border-[#E7E7E7] shadow-xs flex items-center gap-3.5 sm:gap-4 hover:border-[#D98900] transition-colors">
+          <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-md sm:rounded-lg bg-[#FFF4E3] text-[#D98900] flex items-center justify-center shrink-0">
+            <FileEdit className="w-5 h-5 sm:w-6 sm:h-6" />
           </div>
           <div>
             <span className="text-2xl font-extrabold text-[#111111] leading-none block">
@@ -94,9 +94,9 @@ export const DashboardView: React.FC<DashboardViewProps> = ({ onEditArticle, onN
         </div>
 
         {/* Card 3: Em revisão médica */}
-        <div className="bg-white p-5 rounded-2xl border border-[#E7E7E7] shadow-xs flex items-center gap-4 hover:border-[#D98900] transition-colors">
-          <div className="w-12 h-12 rounded-xl bg-[#EBF3FC] text-[#3D7DDE] flex items-center justify-center shrink-0">
-            <Stethoscope className="w-6 h-6" />
+        <div className="bg-white p-4 sm:p-5 rounded-lg sm:rounded-xl border border-[#E7E7E7] shadow-xs flex items-center gap-3.5 sm:gap-4 hover:border-[#D98900] transition-colors">
+          <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-md sm:rounded-lg bg-[#EBF3FC] text-[#3D7DDE] flex items-center justify-center shrink-0">
+            <Stethoscope className="w-5 h-5 sm:w-6 sm:h-6" />
           </div>
           <div>
             <span className="text-2xl font-extrabold text-[#111111] leading-none block">
@@ -109,9 +109,9 @@ export const DashboardView: React.FC<DashboardViewProps> = ({ onEditArticle, onN
         </div>
 
         {/* Card 4: Precisa de atualização */}
-        <div className="bg-white p-5 rounded-2xl border border-[#E7E7E7] shadow-xs flex items-center gap-4 hover:border-[#D98900] transition-colors">
-          <div className="w-12 h-12 rounded-xl bg-[#FDEEEE] text-[#D94B4B] flex items-center justify-center shrink-0">
-            <AlertTriangle className="w-6 h-6" />
+        <div className="bg-white p-4 sm:p-5 rounded-lg sm:rounded-xl border border-[#E7E7E7] shadow-xs flex items-center gap-3.5 sm:gap-4 hover:border-[#D98900] transition-colors">
+          <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-md sm:rounded-lg bg-[#FDEEEE] text-[#D94B4B] flex items-center justify-center shrink-0">
+            <AlertTriangle className="w-5 h-5 sm:w-6 sm:h-6" />
           </div>
           <div>
             <span className="text-2xl font-extrabold text-[#111111] leading-none block">
@@ -125,7 +125,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({ onEditArticle, onN
       </div>
 
       {/* 3. DESEMPENHO DE CONTEÚDO (GRÁFICO COM FILTROS) */}
-      <div className="bg-white p-6 sm:p-7 rounded-2xl border border-[#E7E7E7] shadow-xs space-y-6">
+      <div className="bg-white p-5 sm:p-7 rounded-lg sm:rounded-xl border border-[#E7E7E7] shadow-xs space-y-6">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
             <h3 className="text-base font-bold text-[#111111]">
@@ -136,7 +136,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({ onEditArticle, onN
             </p>
           </div>
 
-          <div className="flex items-center gap-1 bg-[#F6F6F4] p-1 rounded-xl border border-[#E7E7E7] self-start sm:self-auto">
+          <div className="flex items-center gap-1 bg-[#F6F6F4] p-1 rounded-md sm:rounded-lg border border-[#E7E7E7] self-start sm:self-auto">
             {(["7d", "30d", "90d"] as const).map((period) => (
               <button
                 key={period}
@@ -209,7 +209,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({ onEditArticle, onN
       {/* 4. GRID: ÚLTIMOS ARTIGOS + CHECKLIST SEO + PRÓXIMAS PUBLICAÇÕES */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Tabela de Últimos Artigos (lg:col-span-8) */}
-        <div className="lg:col-span-8 bg-white p-6 sm:p-7 rounded-2xl border border-[#E7E7E7] shadow-xs space-y-5">
+        <div className="lg:col-span-8 bg-white p-5 sm:p-7 rounded-lg sm:rounded-xl border border-[#E7E7E7] shadow-xs space-y-5">
           <div className="flex items-center justify-between">
             <div>
               <h3 className="text-base font-bold text-[#111111]">
@@ -296,14 +296,14 @@ export const DashboardView: React.FC<DashboardViewProps> = ({ onEditArticle, onN
         {/* Coluna Direita: Checklist SEO + Próximas Publicações (lg:col-span-4) */}
         <div className="lg:col-span-4 space-y-6">
           {/* Card Checklist SEO */}
-          <div className="bg-white p-6 rounded-2xl border border-[#E7E7E7] shadow-xs space-y-4">
+          <div className="bg-white p-5 sm:p-6 rounded-lg sm:rounded-xl border border-[#E7E7E7] shadow-xs space-y-4">
             <div className="flex items-center justify-between">
               <h4 className="text-sm font-bold text-[#111111]">Checklist SEO</h4>
               <span className="w-2 h-2 rounded-full bg-[#26944B]" />
             </div>
 
-            <div className="flex items-center gap-4 p-4 rounded-xl bg-[#F6F6F4] border border-[#E7E7E7]">
-              <div className="relative w-14 h-14 rounded-full border-4 border-[#26944B] flex items-center justify-center font-extrabold text-sm text-[#111111] bg-white">
+            <div className="flex items-center gap-4 p-3.5 sm:p-4 rounded-md sm:rounded-lg bg-[#F6F6F4] border border-[#E7E7E7]">
+              <div className="relative w-13 h-13 sm:w-14 sm:h-14 rounded-full border-4 border-[#26944B] flex items-center justify-center font-extrabold text-sm text-[#111111] bg-white">
                 92%
               </div>
               <div className="space-y-0.5">
@@ -341,7 +341,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({ onEditArticle, onN
           </div>
 
           {/* Card Próximas Publicações */}
-          <div className="bg-white p-6 rounded-2xl border border-[#E7E7E7] shadow-xs space-y-4">
+          <div className="bg-white p-5 sm:p-6 rounded-lg sm:rounded-xl border border-[#E7E7E7] shadow-xs space-y-4">
             <div className="flex items-center justify-between">
               <h4 className="text-sm font-bold text-[#111111]">
                 Próximas publicações
@@ -356,7 +356,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({ onEditArticle, onN
               {UPCOMING_PUBLICATIONS.map((pub) => (
                 <div
                   key={pub.id}
-                  className="p-3 rounded-xl border border-[#E7E7E7] bg-[#F6F6F4] flex items-start gap-3"
+                  className="p-3 rounded-md sm:rounded-lg border border-[#E7E7E7] bg-[#F6F6F4] flex items-start gap-3"
                 >
                   <div className="bg-[#111111] text-white p-2 rounded-lg text-center shrink-0 w-11">
                     <span className="block text-xs font-black leading-none">

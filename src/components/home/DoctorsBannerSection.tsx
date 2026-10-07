@@ -13,7 +13,7 @@ export const DoctorsBannerSection: React.FC = () => {
     <section className="py-16 sm:py-20 bg-white border-b border-borderGray overflow-hidden">
       <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
         <MotionFade variant="scaleIn" viewportAmount={0.2}>
-          <div className="relative rounded-2xl lg:rounded-3xl overflow-hidden shadow-card border border-borderGray bg-surface">
+          <div className="relative rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-card border border-borderGray bg-surface">
             
             {/* ========================================================================= */}
             {/* VERSÃO DESKTOP (md:block): Alinhamento Preciso nas Áreas Laranja e Branca */}

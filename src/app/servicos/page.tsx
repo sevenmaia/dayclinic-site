@@ -124,7 +124,7 @@ export default function ServicosPage() {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
                 {/* Imagem */}
                 <div className="lg:col-span-6">
-                  <div className="rounded-2xl overflow-hidden shadow-soft border border-borderGray bg-ink-950">
+                  <div className="rounded-lg sm:rounded-xl overflow-hidden shadow-soft border border-borderGray bg-ink-950">
                     <ImagePlaceholder
                       name="service-transplante"
                       src={clinicConfig.images.transplante}
@@ -267,7 +267,7 @@ export default function ServicosPage() {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
                 {/* Imagem */}
                 <div className="lg:col-span-6">
-                  <div className="rounded-2xl overflow-hidden shadow-soft border border-borderGray bg-ink-950">
+                  <div className="rounded-lg sm:rounded-xl overflow-hidden shadow-soft border border-borderGray bg-ink-950">
                     <ImagePlaceholder
                       name="service-cirurgia-plastica"
                       src={clinicConfig.images.centroCirurgico}

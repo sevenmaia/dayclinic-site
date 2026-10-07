@@ -51,7 +51,7 @@ export default function QuemSomosPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             {/* Imagem Oficial dos Fundadores: quem somos.png */}
             <div className="lg:col-span-6">
-              <div className="rounded-2xl lg:rounded-3xl overflow-hidden shadow-soft border border-borderGray bg-surface">
+              <div className="rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-soft border border-borderGray bg-surface">
                 <img
                   src={clinicConfig.images.quemSomosMedicos}
                   alt="Dra. Janaina Tirapelle e Dr. Roberto Vieira — Fundadores da Day Clinic"
@@ -103,10 +103,10 @@ export default function QuemSomosPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Card Missão */}
-            <div className="p-8 rounded-2xl bg-white border border-borderGray shadow-sm flex flex-col justify-between">
+            <div className="p-6 sm:p-8 rounded-lg sm:rounded-xl bg-white border border-borderGray shadow-sm flex flex-col justify-between">
               <div>
-                <div className="w-12 h-12 rounded-xl bg-brand-soft text-brand-orange flex items-center justify-center mb-6">
-                  <Compass className="w-6 h-6" />
+                <div className="w-11 h-11 rounded-md sm:rounded-lg bg-brand-soft text-brand-orange flex items-center justify-center mb-6">
+                  <Compass className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
                 <h3 className="text-xl font-bold text-ink-950 mb-3">Missão</h3>
                 <p className="text-sm text-ink-600 leading-relaxed">
@@ -116,10 +116,10 @@ export default function QuemSomosPage() {
             </div>
 
             {/* Card Visão */}
-            <div className="p-8 rounded-2xl bg-white border border-borderGray shadow-sm flex flex-col justify-between">
+            <div className="p-6 sm:p-8 rounded-lg sm:rounded-xl bg-white border border-borderGray shadow-sm flex flex-col justify-between">
               <div>
-                <div className="w-12 h-12 rounded-xl bg-brand-soft text-brand-orange flex items-center justify-center mb-6">
-                  <Eye className="w-6 h-6" />
+                <div className="w-11 h-11 rounded-md sm:rounded-lg bg-brand-soft text-brand-orange flex items-center justify-center mb-6">
+                  <Eye className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
                 <h3 className="text-xl font-bold text-ink-950 mb-3">Visão</h3>
                 <p className="text-sm text-ink-600 leading-relaxed">
@@ -129,10 +129,10 @@ export default function QuemSomosPage() {
             </div>
 
             {/* Card Valores */}
-            <div className="p-8 rounded-2xl bg-white border border-borderGray shadow-sm flex flex-col justify-between">
+            <div className="p-6 sm:p-8 rounded-lg sm:rounded-xl bg-white border border-borderGray shadow-sm flex flex-col justify-between">
               <div>
-                <div className="w-12 h-12 rounded-xl bg-brand-soft text-brand-orange flex items-center justify-center mb-6">
-                  <Heart className="w-6 h-6" />
+                <div className="w-11 h-11 rounded-md sm:rounded-lg bg-brand-soft text-brand-orange flex items-center justify-center mb-6">
+                  <Heart className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
                 <h3 className="text-xl font-bold text-ink-950 mb-3">Valores</h3>
                 <p className="text-sm text-ink-600 leading-relaxed">

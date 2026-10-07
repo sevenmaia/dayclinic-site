@@ -39,7 +39,7 @@ export const TransplanteSection: React.FC = () => {
           {/* Lado Esquerdo: Imagem entrando pela esquerda (fadeLeft) */}
           <div className="lg:col-span-6 relative">
             <MotionFade variant="fadeLeft">
-              <div className="relative rounded-2xl overflow-hidden shadow-soft border border-borderGray bg-ink-950">
+              <div className="relative rounded-lg sm:rounded-xl overflow-hidden shadow-soft border border-borderGray bg-ink-950">
                 <ImagePlaceholder
                   name="transplante-procedimento"
                   src={clinicConfig.images.transplante}
@@ -52,7 +52,7 @@ export const TransplanteSection: React.FC = () => {
                 />
 
                 {/* Tag flutuante de diferenciação médica */}
-                <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-white/95 backdrop-blur-md shadow-card border border-borderGray-subtle">
+                <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6 p-3.5 sm:p-4 rounded-md sm:rounded-lg bg-white/95 backdrop-blur-md shadow-card border border-borderGray-subtle">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-lg bg-brand-orange/15 text-brand-orange flex items-center justify-center font-bold text-sm">
                       FUE

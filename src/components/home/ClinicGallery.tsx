@@ -115,8 +115,8 @@ export const ClinicGallery: React.FC = () => {
 
         {/* Área Principal de Destaque com scaleIn suave (0.97 -> 1) */}
         <MotionFade variant="scaleIn" delay={0.15}>
-          <div className="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white p-6 sm:p-8 rounded-2xl border border-borderGray shadow-sm">
-            <div className="lg:col-span-8 overflow-hidden rounded-xl bg-ink-950">
+          <div className="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white p-5 sm:p-7 rounded-lg sm:rounded-xl border border-borderGray shadow-sm">
+            <div className="lg:col-span-8 overflow-hidden rounded-md sm:rounded-lg bg-ink-950">
               <ImagePlaceholder
                 name={currentSpace.name}
                 src={currentSpace.src}

@@ -27,7 +27,7 @@ export const DoctorCard: React.FC<DoctorCardProps> = ({ doctor }) => {
   const objectPositionClass = isJanaina ? "object-[25%_15%]" : "object-[75%_15%]";
 
   return (
-    <div className="flex flex-col bg-white rounded-xl overflow-hidden border border-borderGray hover:shadow-card transition-all duration-300">
+    <div className="flex flex-col bg-white rounded-lg sm:rounded-xl overflow-hidden border border-borderGray hover:shadow-card transition-all duration-300">
       {/* Foto do médico com recorte inteligente da foto oficial */}
       <div className="relative overflow-hidden bg-surface h-80 sm:h-96">
         {doctor.photoSrc ? (
