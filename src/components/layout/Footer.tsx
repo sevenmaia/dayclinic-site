@@ -23,8 +23,8 @@ import Button from "@/components/ui/Button";
 export const Footer: React.FC = () => {
   const pathname = usePathname();
 
-  // No painel administrativo não renderiza o footer público do site
-  if (pathname?.startsWith("/admin")) {
+  // No painel administrativo ou na página de bio link não renderiza o footer público do site
+  if (pathname?.startsWith("/admin") || pathname === "/links" || pathname === "/bio") {
     return null;
   }
 

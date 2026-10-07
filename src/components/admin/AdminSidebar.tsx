@@ -30,6 +30,7 @@ import {
   ExternalLink,
   ChevronRight,
   X,
+  Link2,
 } from "lucide-react";
 
 interface AdminSidebarProps {
@@ -72,6 +73,7 @@ export const AdminSidebar: React.FC<AdminSidebarProps> = ({
         { id: "site-estrutura", label: "Estrutura", icon: Building2 },
         { id: "site-depoimentos", label: "Depoimentos", icon: MessageCircle },
         { id: "site-ctas", label: "CTAs", icon: Zap },
+        { id: "site-biolink", label: "Bio Link (/links)", icon: Link2 },
       ],
     },
     {

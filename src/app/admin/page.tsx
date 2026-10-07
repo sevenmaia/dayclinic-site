@@ -7,6 +7,7 @@ import { DashboardView } from "@/components/admin/DashboardView";
 import { ArticleEditorView } from "@/components/admin/ArticleEditorView";
 import { MediaLibraryView } from "@/components/admin/MediaLibraryView";
 import { SiteImagesView } from "@/components/admin/SiteImagesView";
+import { BioLinkAdminView } from "@/components/admin/BioLinkAdminView";
 import { AdminArticle } from "@/data/admin-data";
 
 const TAB_TITLES: Record<string, string> = {
@@ -24,6 +25,7 @@ const TAB_TITLES: Record<string, string> = {
   "site-estrutura": "Estrutura",
   "site-depoimentos": "Depoimentos",
   "site-ctas": "Chamadas para Ação (CTAs)",
+  "site-biolink": "Bio Link (/links)",
   "midia-biblioteca": "Biblioteca de Imagens",
   "midia-locais": "Locais & Ambientes do Site",
   "midia-arquivos": "Arquivos & Documentos",
@@ -101,6 +103,8 @@ export default function AdminPage() {
 
           {activeTab === "midia-locais" && <SiteImagesView />}
 
+          {activeTab === "site-biolink" && <BioLinkAdminView />}
+
           {/* Telas complementares de CMS com feedback elegante */}
           {![
             "dashboard",
@@ -108,6 +112,7 @@ export default function AdminPage() {
             "artigos",
             "midia-biblioteca",
             "midia-locais",
+            "site-biolink",
           ].includes(activeTab) && (
             <div className="bg-white rounded-2xl border border-[#E7E7E7] p-8 text-center max-w-lg mx-auto my-12 space-y-4 shadow-xs">
               <div className="w-12 h-12 rounded-2xl bg-[#FFF4E3] text-[#D98900] flex items-center justify-center mx-auto font-bold text-lg">

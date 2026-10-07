@@ -26,8 +26,8 @@ export const Header: React.FC = () => {
     setMobileMenuOpen(false);
   }, [pathname]);
 
-  // Se estiver na rota de administração, não renderizar o cabeçalho público
-  if (pathname?.startsWith("/admin")) {
+  // Se estiver na rota de administração ou na página de bio link, não renderizar o cabeçalho público
+  if (pathname?.startsWith("/admin") || pathname === "/links" || pathname === "/bio") {
     return null;
   }
 
